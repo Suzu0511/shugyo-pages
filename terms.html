@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>SHUGYO — Terms of Service</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+    background: #FAFAF8;
+    color: #1A1A18;
+    line-height: 1.6;
+    padding: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100%;
+  }
+  .header {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 32px;
+  }
+  .logo {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: #307553;
+    color: #fff;
+    line-height: 56px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A18;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+  }
+  .updated {
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 0.3px;
+  }
+  .section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 14px;
+    border: 1px solid #EBEBEB;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .num {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: #307553;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A18;
+    letter-spacing: -0.2px;
+  }
+  p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  p:last-child { margin-bottom: 0; }
+  ul {
+    list-style: none;
+    margin: 8px 0;
+  }
+  ul li {
+    font-size: 14px;
+    color: #444;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    position: relative;
+  }
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 6px;
+    color: #307553;
+    font-weight: 600;
+  }
+  .price-card {
+    background: #F5F8F6;
+    border: 1px solid #D4E5DA;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+  .price-row:not(:last-child) {
+    border-bottom: 1px solid #E5EFE8;
+  }
+  .plan-name {
+    font-size: 13px;
+    color: #444;
+    font-weight: 500;
+  }
+  .plan-price {
+    font-size: 14px;
+    color: #1A1A18;
+    font-weight: 600;
+  }
+  .plan-discount {
+    font-size: 11px;
+    color: #307553;
+    margin-left: 6px;
+  }
+  ol.steps {
+    list-style: none;
+    counter-reset: stepnum;
+    margin: 10px 0;
+  }
+  ol.steps li {
+    counter-increment: stepnum;
+    font-size: 13px;
+    color: #444;
+    padding-left: 28px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  ol.steps li::before {
+    content: counter(stepnum);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1A1A18;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .warn {
+    background: #FFF8E6;
+    border-left: 3px solid #D97706;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #92400E;
+  }
+  .important {
+    background: #FEF2F2;
+    border-left: 3px solid #DC2626;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #991B1B;
+    font-weight: 500;
+  }
+  a {
+    color: #307553;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .contact-card {
+    background: #1A1A18;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 16px;
+  }
+  .contact-card h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .contact-card .email {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-top: 4px;
+    display: inline-block;
+  }
+  .footer {
+    text-align: center;
+    color: #BBB;
+    font-size: 11px;
+    padding: 24px 0 16px;
+  }
+  @media (min-width: 600px) {
+    body { padding: 32px; }
+    h1 { font-size: 28px; }
+    .section { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">S</div>
+  <h1>Terms of Service</h1>
+  <div class="updated">Last updated · May 2026</div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">1</div>
+    <h2>Acceptance of Terms</h2>
+  </div>
+  <p>By downloading, installing, or using SHUGYO ("the App"), you agree to be bound by these Terms of Service.</p>
+  <p>If you do not agree, please do not use the App.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">2</div>
+    <h2>Description of Service</h2>
+  </div>
+  <p>SHUGYO is a personal self-improvement tracking application that allows you to:</p>
+  <ul>
+    <li>Log training activities and sessions</li>
+    <li>Set goals and track your progress</li>
+    <li>Receive AI-powered coaching advice</li>
+  </ul>
+  <p>Categories include fitness, study, music, sports, and more.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">3</div>
+    <h2>Eligibility</h2>
+  </div>
+  <p>SHUGYO is intended for users aged 4 and above.</p>
+  <p>Users under 13 (or the applicable age in their jurisdiction) should use the App with parental supervision.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">4</div>
+    <h2>Use of the Service</h2>
+  </div>
+  <p>You agree to:</p>
+  <ul>
+    <li>Use the App for personal, non-commercial purposes only</li>
+    <li>Not use the App for any illegal activity</li>
+    <li>Not attempt to reverse engineer, modify, or hack the App</li>
+    <li>Not abuse the AI coaching feature with off-topic or harmful content</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">5</div>
+    <h2>Subscription and Auto-Renewal</h2>
+  </div>
+  <p><strong>Available Plans</strong></p>
+  <div class="price-card">
+    <div class="price-row">
+      <span class="plan-name">Monthly Plan</span>
+      <span class="plan-price">¥980 / month</span>
+    </div>
+    <div class="price-row">
+      <span class="plan-name">Yearly Plan<span class="plan-discount">33% OFF</span></span>
+      <span class="plan-price">¥7,800 / year</span>
+    </div>
+  </div>
+  <p style="font-size: 12px; color: #888;">Yearly plan is equivalent to ¥650/month.</p>
+
+  <p style="margin-top: 14px;"><strong>Auto-Renewal Policy</strong></p>
+  <p>Your subscription will automatically renew at the end of each billing period unless cancelled at least 24 hours before the end of the current period.</p>
+  <p>Payment will be charged to your Apple ID account upon purchase confirmation.</p>
+
+  <p style="margin-top: 14px;"><strong>How to Cancel</strong></p>
+  <ol class="steps">
+    <li>Open iPhone Settings</li>
+    <li>Tap your Apple ID at the top</li>
+    <li>Tap "Subscriptions"</li>
+    <li>Select "SHUGYO"</li>
+    <li>Tap "Cancel Subscription"</li>
+  </ol>
+  <div class="warn">Your subscription remains active until the end of the current billing period. No partial refunds are issued for unused time.</div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">6</div>
+    <h2>Refunds</h2>
+  </div>
+  <p>All purchases are processed through Apple. Refund requests must be submitted directly to Apple at:</p>
+  <p><a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a></p>
+  <p>SHUGYO cannot directly issue refunds.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">7</div>
+    <h2>Data and Privacy</h2>
+  </div>
+  <p>Your training data is stored locally on your device.</p>
+  <p>AI coaching messages are sent to Anthropic API for processing but are not retained.</p>
+  <p>For details, please refer to our Privacy Policy.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">8</div>
+    <h2>Intellectual Property</h2>
+  </div>
+  <p>All content, design, code, and trademarks of SHUGYO are the property of the developer.</p>
+  <p>You may not copy, modify, distribute, or create derivative works without permission.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">9</div>
+    <h2>Disclaimer</h2>
+  </div>
+  <p>SHUGYO is provided "as is" without warranties of any kind.</p>
+  <div class="important">SHUGYO is NOT a medical, fitness, or healthcare service.</div>
+  <p>The AI coaching advice is for informational purposes only and should not replace professional advice.</p>
+  <p>Consult qualified professionals (doctors, trainers, nutritionists) for health-related decisions.</p>
+  <p>The developer is not responsible for any injury, loss, or damage resulting from the use of this App.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">10</div>
+    <h2>Limitation of Liability</h2>
+  </div>
+  <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of SHUGYO.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">11</div>
+    <h2>Changes to Terms</h2>
+  </div>
+  <p>We may update these Terms from time to time.</p>
+  <p>Continued use of SHUGYO after changes constitutes acceptance of the new Terms.</p>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="num">12</div>
+    <h2>Governing Law</h2>
+  </div>
+  <p>These Terms are governed by the laws of Japan.</p>
+  <p>Any disputes shall be resolved in the courts of Japan.</p>
+</div>
+
+<div class="contact-card">
+  <h3>Questions about these Terms?</h3>
+  <a href="mailto:shugyo.support@gmail.com" class="email">shugyo.support@gmail.com</a>
+</div>
+
+<div class="footer">
+  © 2026 SHUGYO. All rights reserved.
+</div>
+
+</body>
+</html>
